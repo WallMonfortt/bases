@@ -38,7 +38,7 @@ let axisY: number[] = [1,2,3,4,5];
 
 axisY.forEach((value) => {
     let axisX1 = axisX.map((value1) => value1 * value);
-    console.log(`(${axisX1})`);
+    console.log(`${axisX1.splice(0, axisX1.length - 1).join(" ")}`);
 });
 
 function maximun(a:number,b:number,c:number):number {
